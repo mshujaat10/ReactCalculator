@@ -5,9 +5,148 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #131416;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+#root {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.App {
+  width: 22rem;
+  height: 34rem;
+  border-radius: 20px;
+}
+
+.display {
+  height: 13rem;
+  position: relative;
+  border-radius: 20px 20px 0px 0px;
+  background-color: #363746;
+}
+
+button:hover {
+  cursor: pointer !important;
+  color: rgb(182, 182, 182) !important;
+}
+
+.inp {
+  font-size: 60px;
+  width: 97.8%;
+  height: 98%;
+  text-align: end;
+  border-radius: 20px;
+  background-color: #242530;
+  color: white;
+  border: 2px solid #1e2224;
+}
+
+.buttons {
+  height: 21rem;
+  background-color: #2E2F3E;
+  border-radius: 0px 0px 20px 20px;
+}
+
+.row button {
+  border: none;
+  font-size: 25px;
+  padding: 7px 12px;
+  width: 4rem;
+  height: 4rem;
+  background-color: #2E2F3E;
+  color: white;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  background-color: #2E2F3E;
+}
+
+.Row button {
+  border: none;
+  font-size: 25px;
+  padding: 7px 12px;
+  width: 4rem;
+  height: 4rem;
+  background-color: #2E2F3E;
+  color: white;
+}
+
+.Row {
+  display: grid;
+  grid-template-columns: 192px 95px;
+  position: relative;
+  left: 0;
+  background-color: #2E2F3E;
+  height: 4.5rem;
+  border-radius: 30px;
+}
+
+.row-btn {
+  border: none;
+  position: relative;
+  display: grid;
+  left: 0;
+  grid-template-columns: 97px 95px 0px;
+  background-color: #2E2F3E;
+}
+
+.row-btn button {
+  border: none;
+  font-size: 25px;
+  width: 4rem;
+  height: 4rem;
+  background-color: #2E2F3E;
+  color: white;
+}
+
+#zero {
+  width: 160px;
+  border-radius: 0px 0px 0px 20px;
+  border: none;
+}
+
+#equal {
+  border: none;
+  border-radius: 0px 0px 20px 0px;
+  position: absolute;
+  height: 9rem;
+  right: 0;
+  z-index: 2;
+  background-color: #FFBB00;
+}
+
+#equal:hover {
+  background-color: #e1a709;
+}
+
+.hist {
+  position: absolute;
+  right: 13px;
+  font-size: 23px;
+  top: 20px;
+  color: white;
+}
+
+#color-row {
+  background-color: #363746;
+}
+
+.operators {
+  background-color: #363746 !important;
+  color: #FFBB00 !important;
+}
+
+.operators:hover {
+  color: #ff7b00 !important;
 }
